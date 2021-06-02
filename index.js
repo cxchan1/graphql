@@ -6,21 +6,21 @@ const { ApolloServer, gql } = require('apollo-server');
 const typeDefs = gql`
   # Comments in GraphQL strings (such as this one) start with the hash (#) symbol.
 
-  # This "Book" type defines the queryable fields for every book in our data source.
-  type Book {
+  # This "Post" type defines the queryable fields for every post in our data source.
+  type Post {
     title: String
     author: String
   }
 
   # The "Query" type is special: it lists all of the available queries that
   # clients can execute, along with the return type for each. In this
-  # case, the "books" query returns an array of zero or more Books (defined above).
+  # case, the "posts" query returns an array of zero or more Posts (defined above).
   type Query {
-    books: [Book]
+    posts: [Post]
   }
 `;
 
-const books = [
+const posts = [
     {
       title: 'The Awakening',
       author: 'Kate Chopin',
@@ -32,10 +32,10 @@ const books = [
   ];
 
   // Resolvers define the technique for fetching the types defined in the
-// schema. This resolver retrieves books from the "books" array above.
+// schema. This resolver retrieves posts from the "posts" array above.
 const resolvers = {
     Query: {
-      books: () => books,
+      posts: () => posts,
     },
   };
 
