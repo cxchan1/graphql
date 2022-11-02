@@ -5,7 +5,7 @@
 - [Graphql](https://graphql.org/)
 - [Tutorial](https://www.howtographql.com/)
 - [Apollo-server](https://www.apollographql.com/docs/apollo-server/)
-- [Keynote-Slide](https://drive.google.com/file/d/14YaiklIK9QogeizLav9Q9-BsAjyTSV0i/view)
+- [Powerpoint-Slide](https://docs.google.com/presentation/d/195Dgvkz4QodwLjneRorU7taxjJ3JDlzk/edit?usp=share_link&ouid=102589762788927874925&rtpof=true&sd=true)
 
 ## Getting Started
 Clone this repository
